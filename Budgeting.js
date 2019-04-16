@@ -13,8 +13,14 @@ incomeButton.addEventListener('click', displayIncome);
 
 class budgetingApp {
     constructor(){
+        this.user = new appUser();
     }
-    storeUserIncome(){
+}
+
+class appUser(){
+    constructor(){
+    }
+        storeUserIncome(){
 
     }
     storeUserPurchases(){

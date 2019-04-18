@@ -53,7 +53,7 @@ class BudgetingApp {
 
 
 
-
+parentIncome.addEventListener('click', () => {});
 
 incomeButton.addEventListener('click', () => {
     user1.storeUserIncome();

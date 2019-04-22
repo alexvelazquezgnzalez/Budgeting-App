@@ -11,8 +11,9 @@ class AppUser {
     }
     editIncome(){
         parentIncome.removeChild(editIncome);
-       parentIncome.appendChild(incomeButton)
-        parentIncome.appendChild(editbox);
+        parentIncome.appendChild(incomeButton)
+        parentIncome.appendChild(income);
+        income.value = "";
 
     }
     storeUserPurchases(){
@@ -137,6 +138,7 @@ class BudgetingApp {
 
 editIncome.addEventListener('click', () => {
     user1.editIncome();
+     totalIncome = "";
 });
 
 incomeButton.addEventListener('click', () => {

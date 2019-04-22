@@ -3,16 +3,9 @@ class AppUser {
     }
 
     storeUserIncome(){
-        totalIncome = income.value ;
-        fullIncome = fullIncome + Number.parseInt(totalIncome);
-        parentIncome.textContent = fullIncome;
-        parentIncome.appendChild(editIncome).textContent = "Edit Income";
-
-    }
-    editIncome(){
-        parentIncome.removeChild(editIncome);
-       parentIncome.appendChild(incomeButton)
-        parentIncome.appendChild(editbox);
+    totalIncome = income.value ;
+    parentIncome.textContent = totalIncome;
+    parentIncome.appendChild(editIncome).textContent = "Edit Income";
 
     }
     storeUserPurchases(){
@@ -34,14 +27,10 @@ let totalIncome = " ";
 let parentIncome = document.getElementById("totalIncome");
 let editIncome = document.createElement('button');
 let user1 = new AppUser();
-let fullIncome = 0;
-let editbox = document.createElement('input');
-editbox.type = "text";
 
 
 
-
-
+var donateIncome = document.createElement('button')
 
 
 
@@ -57,6 +46,10 @@ editbox.type = "text";
 class BudgetingApp {
     constructor(){
         this.user = new appUser();
+    }
+
+    createPieGraph(){
+
     }
 }
 
@@ -135,9 +128,14 @@ class BudgetingApp {
 
 
 
-editIncome.addEventListener('click', () => {
-    user1.editIncome();
-});
+
+
+
+
+
+
+
+parentIncome.addEventListener('click', () => {});
 
 incomeButton.addEventListener('click', () => {
     user1.storeUserIncome();

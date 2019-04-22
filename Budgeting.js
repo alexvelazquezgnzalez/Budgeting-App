@@ -35,14 +35,10 @@ let totalIncome = " ";
 let parentIncome = document.getElementById("totalIncome");
 let editIncome = document.createElement('button');
 let user1 = new AppUser();
-let fullIncome = 0;
-let editbox = document.createElement('input');
-editbox.type = "text";
 
 
 
-
-
+var donateIncome = document.createElement('button')
 
 
 
@@ -58,6 +54,10 @@ editbox.type = "text";
 class BudgetingApp {
     constructor(){
         this.user = new appUser();
+    }
+
+    createPieGraph(){
+
     }
 }
 
@@ -140,6 +140,7 @@ editIncome.addEventListener('click', () => {
     user1.editIncome();
      totalIncome = "";
 });
+
 
 incomeButton.addEventListener('click', () => {
     user1.storeUserIncome();

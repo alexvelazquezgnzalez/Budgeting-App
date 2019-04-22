@@ -4,11 +4,15 @@ class AppUser {
 
     storeUserIncome(){
         totalIncome = income.value ;
-        parentIncome.textContent = totalIncome;
+        fullIncome = fullIncome + Number.parseInt(totalIncome);
+        parentIncome.textContent = fullIncome;
         parentIncome.appendChild(editIncome).textContent = "Edit Income";
 
     }
     editIncome(){
+        parentIncome.removeChild(editIncome);
+       parentIncome.appendChild(incomeButton)
+        parentIncome.appendChild(editbox);
 
     }
     storeUserPurchases(){
@@ -31,6 +35,8 @@ let parentIncome = document.getElementById("totalIncome");
 let editIncome = document.createElement('button');
 let user1 = new AppUser();
 let fullIncome = 0;
+let editbox = document.createElement('input');
+editbox.type = "text";
 
 
 
@@ -57,11 +63,82 @@ class BudgetingApp {
 
 
 
-parentIncome.addEventListener('click', () => {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+editIncome.addEventListener('click', () => {
     user1.editIncome();
 });
 
 incomeButton.addEventListener('click', () => {
     user1.storeUserIncome();
-    fullIncome = fullIncome+ Number.parseInt(totalIncome);
 });

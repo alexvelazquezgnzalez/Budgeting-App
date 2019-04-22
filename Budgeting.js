@@ -38,7 +38,7 @@ let user1 = new AppUser();
 
 
 
-var donateIncome = document.createElement('button')
+var donateButton = document.getElementbyId("donateIncome")
 
 
 

@@ -54,7 +54,7 @@ var donateButton = document.getElementById("donateIncome")
 
 class BudgetingApp {
     constructor(){
-        this.user = new appUser();
+        this.user = new AppUser();
     }
 }
 

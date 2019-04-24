@@ -1,5 +1,6 @@
-class AppUser {
+class BudgetingApp {
     constructor(){
+          this.user = new AppUser();
     }
 
     storeUserIncome(){
@@ -11,31 +12,36 @@ class AppUser {
     }
     editIncome(){
         parentIncome.removeChild(editIncome);
-        parentIncome.appendChild(incomeButton)
+        parentIncome.appendChild(incomeButton);
         parentIncome.appendChild(income);
         income.value = "";
 
     }
     storeUserPurchases(){
+        purchaseBox.textContent = "";
 
-    }
-    userDonate(){
+        purchases.textContent = purchaseBox.value;
+
 
     }
 
 }
+class AppUser {
+    constructor(){
+    }
+}
 
 
 
-
-
-
+let list = document.createElement('li');
+let purchaseBox = document.getElementById("Purchases");
+let purchaseButton = document.getElementById("addPurchase");
+let purchases = document.getElementById("purchaseList");
 var income = document.getElementById("Income");
 var incomeButton = document.getElementById("addIncome");
 let totalIncome = " ";
 let parentIncome = document.getElementById("totalIncome");
 let editIncome = document.createElement('button');
-let user1 = new AppUser();
 let fullIncome = 0;
 let editbox = document.createElement('input');
 editbox.type = "text";
@@ -52,11 +58,6 @@ var donateButton = document.getElementById("donateIncome")
 
 
 
-class BudgetingApp {
-    constructor(){
-        this.user = new AppUser();
-    }
-}
 
 
 
@@ -131,15 +132,18 @@ class BudgetingApp {
 
 
 
-
-
+let ba = new BudgetingApp();
 
 editIncome.addEventListener('click', () => {
-    user1.editIncome();
+    ba.editIncome();
      totalIncome = "";
 });
 
 
 incomeButton.addEventListener('click', () => {
-    user1.storeUserIncome();
+    ba.storeUserIncome();
 });
+
+purchaseButton.addEventListener('click', () => {
+    ba.storeUserPurchases();
+})

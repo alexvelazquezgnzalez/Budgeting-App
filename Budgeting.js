@@ -29,16 +29,17 @@ class AppUser {
 
 
 
+
 var income = document.getElementById("Income");
 var incomeButton = document.getElementById("addIncome");
 let totalIncome = " ";
 let parentIncome = document.getElementById("totalIncome");
 let editIncome = document.createElement('button');
 let user1 = new AppUser();
-
-
-
-var donateButton = document.getElementbyId("donateIncome")
+let fullIncome = 0;
+let editbox = document.createElement('input');
+editbox.type = "text";
+var donateButton = document.getElementById("donateIncome")
 
 
 
@@ -55,11 +56,8 @@ class BudgetingApp {
     constructor(){
         this.user = new appUser();
     }
-
-    createPieGraph(){
-
-    }
 }
+
 
 
 

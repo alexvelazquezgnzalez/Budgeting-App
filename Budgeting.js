@@ -39,7 +39,13 @@ let user1 = new AppUser();
 let fullIncome = 0;
 let editbox = document.createElement('input');
 editbox.type = "text";
-var donateButton = document.getElementById("donateIncome")
+
+
+
+
+
+var donateButton = document.getElementById("donateIncome");
+
 
 
 
@@ -134,6 +140,7 @@ class BudgetingApp {
 
 
 
+
 editIncome.addEventListener('click', () => {
     user1.editIncome();
      totalIncome = "";
@@ -143,3 +150,6 @@ editIncome.addEventListener('click', () => {
 incomeButton.addEventListener('click', () => {
     user1.storeUserIncome();
 });
+
+
+

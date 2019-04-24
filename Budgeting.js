@@ -45,7 +45,13 @@ let editIncome = document.createElement('button');
 let fullIncome = 0;
 let editbox = document.createElement('input');
 editbox.type = "text";
-var donateButton = document.getElementById("donateIncome")
+
+
+
+
+
+var donateButton = document.getElementById("donateIncome");
+
 
 
 
@@ -134,6 +140,7 @@ var donateButton = document.getElementById("donateIncome")
 
 let ba = new BudgetingApp();
 
+
 editIncome.addEventListener('click', () => {
     ba.editIncome();
      totalIncome = "";
@@ -144,6 +151,8 @@ incomeButton.addEventListener('click', () => {
     ba.storeUserIncome();
 });
 
+
 purchaseButton.addEventListener('click', () => {
     ba.storeUserPurchases();
 })
+

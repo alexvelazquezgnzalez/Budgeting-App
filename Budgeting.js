@@ -25,8 +25,10 @@ class BudgetingApp {
 
     }
     graphHistory(){
-
-
+        let secondT = fullIncome- Number.parseInt(purchases.firstElementChild.textContent);
+        let thirdT = secondT - Number.parseInt(purchases.children[1].textContent);
+        let fourthT = thirdT - Number.parseInt(purchases.children[2].textContent);
+        let fifthT = fourthT - Number.parseInt(purchases.children[3].textContent);
 
                 var ctx = document.getElementById('myChart').getContext('2d');
 var chart = new Chart(ctx, {
@@ -35,14 +37,14 @@ var chart = new Chart(ctx, {
 
     // The data for our dataset
     data: {
-        labels: ['Starting Income', 'Second Transacton', 'Third Transacton', 'fourth Transacton', 'Fifth Transacton', 'Sixth Transacton', 'Seventh Transacton'],
+        labels: ['Starting Income', 'Second Transacton', 'Third Transacton', 'fourth Transacton', 'Fifth Transacton'],
         datasets: [{
             label: 'Account History',
 
 
             backgroundColor: 'rgb(100, 100, 200)',
             borderColor: 'rgb(10, 10, 200)',
-         data: [ fullIncome, fullIncome- Number.parseInt(purchases.firstElementChild.textContent), 5, 2, 20, 30, 45]
+         data: [ fullIncome, secondT, thirdT , fourthT, fifthT ]
 
         }]
     },
@@ -60,6 +62,8 @@ class AppUser {
 
 
 
+
+let li = document.getElementsByTagName('ul')[0];
 let purchaseBox = document.getElementById("Purchases");
 let purchaseButton = document.getElementById("addPurchase");
 let purchases = document.getElementById("purchaseList");

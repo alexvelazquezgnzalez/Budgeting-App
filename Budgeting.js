@@ -38,8 +38,8 @@ var chart = new Chart(ctx, {
         labels: ['Frist Transacton', 'Second Transacton', 'Third Transacton', 'fourth Transacton', 'Fifth Transacton', 'Sixth Transacton', 'Seventh Transacton'],
         datasets: [{
             label: 'Account History',
-            backgroundColor: 'rgb(255, 99, 132)',
-            borderColor: 'rgb(255, 99, 132)',
+            backgroundColor: 'rgb(100, 100, 200)',
+            borderColor: 'rgb(10, 10, 200)',
             data: [ fullIncome, Number.parseInt(purchases.firstChild.textContent), 5, 2, 20, 30, 45]
         }]
     },

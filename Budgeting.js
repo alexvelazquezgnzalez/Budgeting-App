@@ -38,9 +38,12 @@ var chart = new Chart(ctx, {
         labels: ['Starting Income', 'Second Transacton', 'Third Transacton', 'fourth Transacton', 'Fifth Transacton', 'Sixth Transacton', 'Seventh Transacton'],
         datasets: [{
             label: 'Account History',
-            backgroundColor: 'rgb(255, 99, 132)',
-            borderColor: 'rgb(255, 99, 132)',
-            data: [ fullIncome, fullIncome- Number.parseInt(purchases.firstElementChild.textContent), 5, 2, 20, 30, 45]
+
+
+            backgroundColor: 'rgb(100, 100, 200)',
+            borderColor: 'rgb(10, 10, 200)',
+         data: [ fullIncome, fullIncome- Number.parseInt(purchases.firstElementChild.textContent), 5, 2, 20, 30, 45]
+
         }]
     },
 

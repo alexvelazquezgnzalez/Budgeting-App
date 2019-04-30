@@ -1,13 +1,26 @@
 body {
-    color: white;
-    background-color: grey;
+    color: black;
+    background-color: white;
     text-align: center;
 }
 
 
-h2 {
-    color: white
+#h2one {
+    color: red;
 }
+
+#h2two {
+    color: gold;
+}
+
+#h2three{
+    color: green;
+}
+
+#h2four{
+    color: blue;
+}
+
 
 
 

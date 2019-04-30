@@ -75,6 +75,7 @@ let editIncome = document.createElement('button');
 let fullIncome = 0;
 let editbox = document.createElement('input');
 editbox.type = "text";
+editIncome.className = 'btn btn-danger';
 
 
 

@@ -6,38 +6,38 @@
     <link rel="stylesheet" type="text/css" href="Budgeting.css">
     </head>
     <body>
-                <h2> Income: </h2>
+                <h2 id="h2one"> Income: </h2>
         <div id="totalIncome">
             <div>
                 <input id="Income"
                         type="text"
                        name="Income">
-                <button id="addIncome">Add Income</button>
+                <button id="addIncome" class="btn btn-danger">Add Income</button>
             </div>
         </div>
-                <h2>Purchase History</h2>
+                <h2 id="h2two">Purchase History:</h2>
         <div id="PurchaseHistory">
             <div>
                 <Input id="Purchases"
                        type="text"></Input>
-                <button id="addPurchase">Add Your Purchase</button>
+                <button id="addPurchase" class="btn btn-warning" >Add Your Purchase</button>
             </div>
             <div id="purchaseList">
             </div>
         </div>
 
 
-            <h2>Donations</h2>
+            <h2 id="h2three">Donations:</h2>
             <div  id="donation">
 
         </div>
         <div>
 
-<button onclick="window.location='https://www.charities.org/charities_list';">Click to Donate</button>
+<button onclick="window.location='https://www.charities.org/charities_list';" class="btn btn-success">Click to Donate</button>
         </div>
 
 
-        <h2>Account History</h2>
+        <h2 id="h2four">Account History:</h2>
         <div>
         <button id="graphing">Click to Graph!</button>
         </div>

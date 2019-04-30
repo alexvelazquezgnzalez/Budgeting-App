@@ -35,12 +35,12 @@ var chart = new Chart(ctx, {
 
     // The data for our dataset
     data: {
-        labels: ['Frist Transacton', 'Second Transacton', 'Third Transacton', 'fourth Transacton', 'Fifth Transacton', 'Sixth Transacton', 'Seventh Transacton'],
+        labels: ['Starting Income', 'Second Transacton', 'Third Transacton', 'fourth Transacton', 'Fifth Transacton', 'Sixth Transacton', 'Seventh Transacton'],
         datasets: [{
             label: 'Account History',
             backgroundColor: 'rgb(255, 99, 132)',
             borderColor: 'rgb(255, 99, 132)',
-            data: [ fullIncome, Number.parseInt(purchases.firstChild.textContent), 5, 2, 20, 30, 45]
+            data: [ fullIncome, fullIncome- Number.parseInt(purchases.firstElementChild.textContent), 5, 2, 20, 30, 45]
         }]
     },
 
